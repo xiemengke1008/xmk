@@ -1,1 +1,16 @@
-﻿去去去
+﻿spring:
+  profiles:
+    active: 
+      - dev
+
+---
+spring:
+  profiles: dev
+  application:
+    name: cloud_config_dev
+
+---
+spring:
+  profiles: test
+  application:
+    name: cloud_config_test
